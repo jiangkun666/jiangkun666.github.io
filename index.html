@@ -1,0 +1,44 @@
+<style>
+    body{
+        display: flex;
+       
+        justify-content: center;
+        background-color: black;
+    }
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    
+    transform: translateY(0);
+}
+.box.on{
+    animation: move 3s steps(6,start);
+    animation-fill-mode: forwards
+}
+.b1{
+   background-color: aqua;
+   animation-fill-mode: none
+}
+.b2{
+   background-color: yellow;
+   animation-fill-mode: backwards
+}
+.b3{
+   background-color: gray;
+   animation-fill-mode: forwards
+}
+.b4{
+   background-color: red;
+   animation-fill-mode: both
+}
+
+@keyframes move{
+    from{transform: translateY(-50px)}
+    to  {transform: translateY( 50px)}
+}
+</style>
+<div class="box b1 on" ></div>
+<div class="box b2 on" ></div>
+<div class="box b3 on" ></div>
+<div class="box b4 on" ></div>
