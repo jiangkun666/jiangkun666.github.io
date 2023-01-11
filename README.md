@@ -3,5 +3,4 @@
 	```javascript
 	   let num = a + b;
 	```
-	1231313
-	asdada
+	123131
